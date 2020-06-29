@@ -30,10 +30,12 @@
         $(function() {
             // $('#sub').css('color','blue');
             // $('a[href*="dotinstall"]').css('background','green');
-            $('#box').toggle(2000);
-            $('#box').toggle(2000);
-            $('#box').toggle(2000);
-            $('#box').toggle(2000); 
+            $('#box').toggle(700);
+            $('#box').toggle(700);
+            $('#box').toggle(700);
+            $('#box').toggle(700, function() {
+                alert('done!');
+            }); 
         });
     </script>
 </body>
