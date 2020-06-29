@@ -31,6 +31,7 @@
         <option>fkoji</option>
         <option>dotinstall</option>
     </select>
+    <button>Add</button>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
         $(function() {
@@ -59,6 +60,10 @@
                 .blur(function() {
                     $(this).css('background', 'white')
                 });
+            $('button').click(function () {
+                var p = $('<p>').text("text added!!");
+                $(this).before(p);
+            })
         });
     </script>
 </body>
