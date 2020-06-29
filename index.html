@@ -42,15 +42,16 @@
             // $('#box').toggle(700, function() {
             //     alert('done!');
             // }); 
-            $('#box').mouseover(function() {
-                $(this).css('background', 'blue')
-            })
-            .mouseout(function() {
-                $(this).css('background', 'green')
-            })
-            .mousemove(function(e) {
-                $(this).text(e.pageX)
-            });
+            $('#box')
+                .mouseover(function() {
+                    $(this).css('background', 'blue')
+                })
+                .mouseout(function() {
+                    $(this).css('background', 'green')
+                })
+                .mousemove(function(e) {
+                    $(this).text(e.pageX)
+                });
             $('#name')
                 .focus(function () {
                     $(this).css('background', 'gray')
