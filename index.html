@@ -30,12 +30,21 @@
         $(function() {
             // $('#sub').css('color','blue');
             // $('a[href*="dotinstall"]').css('background','green');
-            $('#box').toggle(700);
-            $('#box').toggle(700);
-            $('#box').toggle(700);
-            $('#box').toggle(700, function() {
-                alert('done!');
-            }); 
+            // $('#box').toggle(700);
+            // $('#box').toggle(700);
+            // $('#box').toggle(700);
+            // $('#box').toggle(700, function() {
+            //     alert('done!');
+            // }); 
+            $('#box').mouseover(function() {
+                $(this).css('background', 'blue')
+            })
+            .mouseout(function() {
+                $(this).css('background', 'green')
+            })
+            .mousemove(function(e) {
+                $(this).text(e.pageX)
+            });
         });
     </script>
 </body>
